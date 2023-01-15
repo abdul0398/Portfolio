@@ -1,37 +1,79 @@
-/* The full form of VW of VH is viewport width, height. 
-It works like the percentage unit. Specifying 10vw is 
-equivalent to occupying 10% of entire visible 
-screen width or height */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
 *{
-    margin:0;
-    padding: 0; 
+    margin: 0;
+    padding:0;
+}
+.sidebar{
+    background-color: aquamarine;
+    width: 15vw;
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+}
+.sidebar nav{
+    padding: 24px;
+}
+.sidebar nav ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 30px 0;
+}
+.sidebar nav ul li a{
+   text-decoration: none;
+   color: black;
 }
 .main{
-    background-color: bisque;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: aqua;
+    width: 90vw;
 }
-.container, .info-container{
+.container{
     display: flex;
 }
 .info-container{
-    background-color: aquamarine;
-    height: 80vh;
-    width: 70vw;
+    display: flex;
+    background-color:aquamarine;
+    height: 68vh;
+    width: 80vw;
+    margin : 50px auto;
+    justify-content: space-around;
 }
-.sidebar nav li{
-    list-style: none;
-    padding: 20px 0;
-    font-size: large;
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
 }
-.sidebar{
-    background-color:aqua;
-    width: 10vw;
-    height:100vh;
+.image img{
+    width: 90vh;
 }
-.sidebar nav{
-    padding: 40px;
+.hello{
+    font-size: 24px
 }
+.name{
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;
 
+}
+.about{
+    font-size: 15px
+}
+.buttons{
+    margin-top: 20px;
+    padding: 0 10px;
+}
+.buttons button{
+    padding: 5px 10px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(24, 184, 184);
+    font-size: 13px;
+    border: none;
+
+}
+.buttons button:hover{
+    background-color: white;
+    color:  rgb(24, 184, 184);
+    font-size: 13px;
+
+}
