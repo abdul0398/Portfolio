@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+}
+.container{
+    display: flex;
+}
+.sidebar{
+    background-color: aquamarine;
+    width: 185px;
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+}
+.sidebar nav{
+    padding: 24px;
+}
+.sidebar nav ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 30px 0;
+}
+.sidebar nav ul li a{
+   text-decoration: none;
+   color: black;
+}
+.main{
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    background-color: aqua;
+    width: 100vw;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.Skills{
+    margin-top: 2vw;
+    width: 50vw;
+    height:50vh;
+}
+.Skills h1{
+    text-align: center;
+
+}
+.skillitem{
+    display: flex;
+    margin: 2vw;
+}
+.hundred{
+    width:400px;
+    background-color: red;
+    border: 2px solid black;
+    margin-left: 1vw;
+}
+.fifty{
+    width:200px;
+    background-color: rgb(253, 177, 187);
+    border: 2px solid black;
+    margin-left: 1vw;
+}
+.seventyFive{
+    width:300px;
+    background-color: rgb(245, 104, 104);
+    border: 2px solid black;
+    margin-left: 1vw;
+}

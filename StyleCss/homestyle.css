@@ -32,6 +32,7 @@
 }
 .info-container{
     display: flex;
+    flex-wrap: wrap;
     background-color:aquamarine;
     height: 68vh;
     width: 80vw;
@@ -45,7 +46,8 @@
     font-family: 'Source Code Pro', monospace;
 }
 .image img{
-    width: 90vh;
+    width: 40vh;
+
 }
 .hello{
     font-size: 24px
@@ -60,14 +62,14 @@
 }
 .buttons{
     margin-top: 20px;
-    padding: 0 10px;
 }
 .buttons button{
-    padding: 5px 10px;
+    padding: 7px 10px;
     color: white;
     border-radius: 15px;
     background-color: rgb(24, 184, 184);
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: bold;
     border: none;
 
 }

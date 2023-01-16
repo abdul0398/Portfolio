@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdul rehman khan</title>
-    <link rel="stylesheet" href="/StyleCss/style.css">
+    <link rel="stylesheet" href="/StyleCss/FormCss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <div class="sidebar">
             <nav>
                 <ul>
                     <li><a href="/Html/index.html">Home</a></li>
-                    <li><a href="/contact">Services</a></li>
-                    <li><a href="/contact">Skills</a></li>
+                    <li><a href="/Html/contact.html">Contact Us</a></li>
+                    <li><a href="/Html/Aboutme.html">Aboutme</a></li>
                     <li><a href="/contact">Resume</a></li>
                 </ul>
             </nav>
         </div>
         <div class="main">
-            <div class="info-container">
-                <div class="text">
-                    <div class="hello">Hello, I'm </div>
-                    <div class="name">Abdul Rehman Khan</div>
-                    <div class="about">a newbie web developer</div>
-                    <div class="buttons">
-                        <button>
-                            Aboutme
-                        </button>
-                        <button>Resume</button>
-                    </div>
-                </div>
-                <div class="image">
-                    <img src="/Assests/man.png" alt="man">
-                </div>
+            <h1>Contact me</h1>
+            <div class="form-container">
+                <form method="post" target="_blank">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email.." required="@gmail.com" >
+                    <label for="texta">Subject</label>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Write Something.." required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
-
         </div>
+
     </div>
-    
+    </div>
+
 </body>
+
 </html>
