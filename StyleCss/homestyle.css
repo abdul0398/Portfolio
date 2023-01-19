@@ -7,9 +7,12 @@
 }
 .sidebar{
     background-color: aquamarine;
-    width: 15vw;
     height: 100vh;
     font-family: 'Fira Sans', sans-serif;
+}
+.sidebarGo {
+    transform: translate(-233px, 0px);
+    position: absolute;
 }
 .sidebar nav{
     padding: 24px;
@@ -23,9 +26,18 @@
    text-decoration: none;
    color: black;
 }
+.hamburger{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+}
+.cross{
+    margin-left: 60px;
+}
 .main{
-    background-color: aqua;
-    width: 90vw;
+    background-color: hsl(180, 100%, 50%);
+    width: 100vw;
 }
 .container{
     display: flex;
@@ -34,10 +46,11 @@
     display: flex;
     flex-wrap: wrap;
     background-color:aquamarine;
-    height: 68vh;
+    height: 85vh;
     width: 80vw;
     margin : 50px auto;
     justify-content: space-around;
+    border-radius: 20px;
 }
 .text {
     display: flex;
@@ -47,7 +60,6 @@
 }
 .image img{
     width: 40vh;
-
 }
 .hello{
     font-size: 24px
@@ -77,5 +89,13 @@
     background-color: white;
     color:  rgb(24, 184, 184);
     font-size: 13px;
-
+}
+@media screen and (max-width: 1000px) {
+    /* * {
+      background-color: lightgreen;
+    } */
+    .sidebar{
+        transform: translate(-233px, 0px);
+        position: absolute;
+    }
 }
