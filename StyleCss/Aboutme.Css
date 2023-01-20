@@ -9,9 +9,14 @@
 }
 .sidebar{
     background-color: aquamarine;
-    width: 185px;
     height: 100vh;
     font-family: 'Fira Sans', sans-serif;
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+}
+.sidebarGo {
+    transform: translate(-233px, 0px);
+    position: absolute;
 }
 .sidebar nav{
     padding: 24px;
@@ -25,6 +30,15 @@
    text-decoration: none;
    color: black;
 }
+.hamburger{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+}
+.cross{
+    margin-left: 91px;
+}
 .main{
     font-family: 'Fira Sans', sans-serif;
     display: flex;
@@ -35,20 +49,34 @@
 }
 /* For Skills */
 .Skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:53px 35px 4rem;
+    column-gap: 10px;
     margin-top: 2vw;
-    width: 50vw;
-    height:50vh;
+    
 }
 .Skills h1{
     text-align: center;
-
+    grid-column: 1/5;
+    height: fit-content;
+}
+.Skills h3{
+    grid-column: 1/5;
+    height: fit-content;
+}
+.skillitem h2{
+    font-size: 1.2rem;
+    padding: 0.5vw 3.5vw;
 }
 .skillitem{
-    display: flex;
-    margin: 2vw;
+    width: fit-content;
+    height: fit-content;
+    background-color: aquamarine;
+    border-radius: 10px;
 }
 .hundred{
-    width:400px;
+    width:17vw;
     background-color: rgb(0, 183, 255);
     border: 2px solid black;
     margin-left: 1vw;
@@ -62,24 +90,30 @@
     border-radius: 10px;
 }
 .seventyFive{
-    width:300px;
-    background-color: rgb(245, 104, 104);
+    width:12vw;
+    background-color: rgb(33, 190, 252);
     border: 2px solid black;
     margin-left: 1vw;
     border-radius: 10px;
 }
 /* For Achivements */
-.achievements h1{
+.accomplishment h1{
     text-align: center;
+    margin: 20px 0px;
 }
-.achievements{
-    margin: 2vw, 0;
+.accomplishment{
     width: 50vw;
-    height: 50vh;
 }
-@media screen and (max-width: 1000px) {
-    .sidebar{
-        transform: translate(-233px, 0px);
-        position: absolute;
+.accomplishment li{
+    padding-bottom: 20px;
+}
+.accomplishment li a{
+    text-decoration: none;
+    color: rgb(0, 155, 160);
+}
+@media only screen and (max-width: 700px) {
+    .accomplishment{
+        width: 23rem;
     }
 }
+  

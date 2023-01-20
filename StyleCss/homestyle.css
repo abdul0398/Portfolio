@@ -9,6 +9,8 @@
     background-color: aquamarine;
     height: 100vh;
     font-family: 'Fira Sans', sans-serif;
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
 }
 .sidebarGo {
     transform: translate(-233px, 0px);
@@ -33,7 +35,7 @@
     cursor: pointer;
 }
 .cross{
-    margin-left: 60px;
+    margin-left: 91px;
 }
 .main{
     background-color: hsl(180, 100%, 50%);
@@ -91,11 +93,9 @@
     font-size: 13px;
 }
 @media screen and (max-width: 1000px) {
-    /* * {
-      background-color: lightgreen;
-    } */
-    .sidebar{
-        transform: translate(-233px, 0px);
-        position: absolute;
-    }
+    .image{
+        display: none;
+    }   
+   
+
 }
