@@ -5,44 +5,71 @@
     margin: 0;
     padding:0;
 }
+/* ##### side bar  Starts#####  */
 .sidebar{
-    background-color: aquamarine;
-    height: 100vh;
+    background-color: hsl(180, 100%, 50%);
     font-family: 'Fira Sans', sans-serif;
     transition: transform 0.3s ease-in-out;
-    position: absolute;
+    padding: 24px 0px;
+    text-align: end;
+    width: 100vw;
 }
-.sidebarGo {
-    transform: translate(-233px, 0px);
-    position: absolute;
-}
-.sidebar nav{
-    padding: 24px;
-}
-.sidebar nav ul li{
-    list-style: none;
-    font-size: 18px;
-    padding: 30px 0;
-}
-.sidebar nav ul li a{
+.sidebar div a{
    text-decoration: none;
-   color: black;
+   color: rgb(0, 0, 0);
+   font-size: larger;
 }
-.hamburger{
+.sidebar div{
+    display: inline-block;
+    color: black;
+    padding: 0px 26px;
+}
+ .ham{
     position: absolute;
-    top: 5px;
-    left: 10px;
-    cursor: pointer;
+    right: 12px;
+}
+.ham img{
+    display: none;
+    width: 44px;
 }
 .cross{
-    margin-left: 91px;
+    position: absolute;
+    right: 12px;
+    top: 10px;
 }
+.cross img{
+    width: 44px;
+}
+@media only screen and (max-width: 560px) {
+    .accomplishment{
+        width: 23rem;
+    }
+    .sidebar div{
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+     }
+     .sidebarGo{
+        position: absolute;
+        transform: translate(0px, -195px);
+    }
+    .ham img{
+        display: inline-block;
+    }
+    .sidebar{
+        position: absolute;
+    }
+}
+/* ##### side bar  Ends #####  */
+
+/* ##### Home Starts#####  */
 .main{
     background-color: hsl(180, 100%, 50%);
     width: 100vw;
 }
 .container{
     display: flex;
+    flex-direction: column;
 }
 .info-container{
     display: flex;
@@ -50,7 +77,7 @@
     background-color:aquamarine;
     height: 85vh;
     width: 80vw;
-    margin : 50px auto;
+    margin : 10px auto;
     justify-content: space-around;
     border-radius: 20px;
 }
@@ -96,6 +123,121 @@
     .image{
         display: none;
     }   
-   
+}
+/* ##### Home Ends #####  */
 
+/* ##### Aboutme Starts#####  */
+.Skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:53px 35px 4rem;
+    column-gap: 10px;
+    margin-top: 2vw;
+    
+}
+.Skills h1{
+    text-align: center;
+    grid-column: 1/5;
+    height: fit-content;
+}
+.Skills h3{
+    grid-column: 1/5;
+    height: fit-content;
+}
+.skillitem h2{
+    font-size: 1.2rem;
+    padding: 0.5vw 3.5vw;
+}
+.skillitem{
+    width: fit-content;
+    height: fit-content;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.hundred{
+    width:17vw;
+    background-color: rgb(0, 183, 255);
+    border: 2px solid black;
+    margin-left: 1vw;
+    border-radius: 10px;
+}
+.fifty{
+    width:200px;
+    background-color: rgb(73, 204, 255);
+    border: 2px solid black;
+    margin-left: 1vw;
+    border-radius: 10px;
+}
+.seventyFive{
+    width:12vw;
+    background-color: rgb(33, 190, 252);
+    border: 2px solid black;
+    margin-left: 1vw;
+    border-radius: 10px;
+}
+/* For Achivements */
+.accomplishment h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+.accomplishment{
+    width: 50vw;
+}
+.accomplishment li{
+    padding-bottom: 20px;
+}
+.accomplishment li a{
+    text-decoration: none;
+    color: rgb(0, 155, 160);
+}
+/* ##### Aboutme Ends#####  */
+/* ##### Contact Starts#####  */
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.form-container{
+    margin-top: 2vw;
+}
+input[type=text] {
+    padding :12px;
+    width: 50vw;
+    min-width: 22rem;
+    border-radius: 24px;
+    border: none;
+}
+input[type=email] {
+    padding :12px;
+    width: 50vw;
+    min-width: 22rem;
+    border-radius: 24px;
+    border: none;
+}
+input[type=submit] {
+    padding :9px;
+    margin-top: 2vw;
+    width: 100px;
+    border-radius: 24px;
+    font-size: 1.2rem;
+    border: none;
+    background-color:aquamarine;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+input[type=submit]:hover{    
+    background-color:rgb(0, 0, 0);
+    color: aquamarine;
+    cursor: pointer;
+    border: none;
+}
+textarea{
+    border-radius: 24px;
+    padding : 12px;
+}
+label{
+    margin-top: 10px;
+    margin: 10px 0 5px 5px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
 }

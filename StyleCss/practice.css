@@ -2,23 +2,26 @@
 
 *{
     margin: 0;
-    padding:0;
+    padding: 0;
+    color: aliceblue;
 }
 .container{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
 }
 .sidebar{
-    background-color: hsl(180, 100%, 50%);
+    background-color: rgb(75, 82, 79);
     font-family: 'Fira Sans', sans-serif;
     transition: transform 0.3s ease-in-out;
+}
+.sidebar{
     padding: 24px 0px;
     text-align: end;
     width: 100vw;
 }
 .sidebar div a{
    text-decoration: none;
-   color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
    font-size: larger;
 }
 .sidebar div{
@@ -45,7 +48,7 @@
 .main{
     font-family: 'Fira Sans', sans-serif;
     display: flex;
-    background-color: aqua;
+    background-color: rgb(110, 143, 143);
     width: 100vw;
     flex-direction: column;
     align-items: center;
@@ -75,7 +78,7 @@
 .skillitem{
     width: fit-content;
     height: fit-content;
-    background-color: aquamarine;
+    background-color: rgb(117, 117, 117);
     border-radius: 10px;
 }
 .hundred{
@@ -121,16 +124,13 @@
     .sidebar div{
         display: block;
         text-align: center;
-        padding-bottom: 10px;
      }
      .sidebarGo{
         position: absolute;
-        transform: translate(0px, -195px);
+        transform: translate(0px, -176px);
     }
-    .ham img{
+     .ham img{
         display: inline-block;
-    }
-    .sidebar{
-        position: absolute;
-    }
+
+     }
 }
